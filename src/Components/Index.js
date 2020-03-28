@@ -8,19 +8,20 @@ class Index extends React.Component {
           active: false
       }
 	}
+
+	componentWillUpdate() {
+		if(this.state.active === false) {
+			document.getElementById('player').play()
+		} else {
+			document.getElementById('player').pause()
+		}
+	}
 	
   render() {
 		const string = `//`
 
-		const handleClick = () => {
+		const handleClick = (e, state) => {
 			this.setState({active: !this.state.active})
-			if(this.state.active === true) {
-				document.getElementById('player').play();
-			}
-
-			if(this.state.active === false) {
-				document.getElementById('player').pause();
-			}
 		}
 
     return(
@@ -33,6 +34,8 @@ class Index extends React.Component {
         </div>
         <div className='text'>
         <h3>{`${string}///PERPETUAL STREAM///${string}`}</h3>
+				<h3><a href ="https://hiddenharmony.bigcartel.com/product/c-r-gillespie-concentration-patterns-2lp-hh01">PRE ORDER</a></h3>
+
           <p>May 1st</p>
           <p>Hidden Harmony Recordings</p>
           <p>(HH01)</p>
@@ -40,7 +43,8 @@ class Index extends React.Component {
         <audio
         	src='http://edge.mixlr.com/channel/onuip'
           type='audio/mpeg'
-          autoplay
+					
+				
           id="player"
         ></audio>
       </>
