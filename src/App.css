@@ -1,3 +1,61 @@
+@font-face {
+  font-family: 'Rubik-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/Assets/Fonts/Rubik-Regular.ttf'); /* IE9 Compat Modes */
+  src: local('Rubik-Regular'), local('Rubik-Regular'),
+       url('../src/Assets/Fonts/Rubik-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/Assets/Fonts/Rubik-Medium.ttf'); /* IE9 Compat Modes */
+  src: local('Rubik-Medium'), local('Rubik-Medium'),
+       url('../src/Assets/Fonts/Rubik-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/Assets/Fonts/Rubik-Bold.ttf'); /* IE9 Compat Modes */
+  src: local('Rubik-Bold'), local('Rubik-Bold'),
+       url('../src/Assets/Fonts/Rubik-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Panetteria';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../src/Assets/Fonts/Panetteria_2019.otf'); /* IE9 Compat Modes */
+  src: local('Panetteria'), local('Panetteria'),
+       url('../src/Assets/Fonts/Panetteria_2019.otf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../src/Assets/Fonts/MyriadPro-Regular.otf'); /* IE9 Compat Modes */
+  src: local('MyriadPro-Regular'), local('MyriadPro-Regular'),
+       url('../src/Assets/Fonts/MyriadPro-Regular.otf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/Assets/Fonts/Arial.ttf'); /* IE9 Compat Modes */
+  src: local('Arial'), local('Arial'),
+       url('../src/Assets/Fonts/Arial.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+
+
+
 .App {
   text-align: center;
 }
@@ -7,11 +65,58 @@
   pointer-events: none;
 }
 
-p {
-  margin: 10px 0;
-  color: white;
-  font-family: 'Gothic A1', sans-serif;
-  font-weight: 900;
+h1, h2 {
+  font-family: 'Panetteria', sans-serif;
+  
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-family: 'Arial';
+  color: rgb(208, 187, 170);
+  letter-spacing: 3px;
+}
+
+p  {
+  color: rgb(208, 187, 170);
+  font-family: 'Arial';
+  margin: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Arial';
+  color: rgb(208, 187, 170);
+  transition: 0.4s all;
+
+}
+
+a:hover {
+  color: black;
+}
+
+svg {
+  fill: rgb(208, 187, 170);
+  margin: 0 10px;
+  width: 35px;
+  height: 35px;
+  transition: 0.4s all;
+}
+
+svg:hover {
+  fill: black
+}
+
+.topSocials {
+  width: 100%;
+  display: flex;
+}
+
+p:last-child {
+  margin-bottom: 40px;
 }
 
 .App-header {
@@ -25,4 +130,88 @@ p {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+}
+
+
+
+
+.text {
+  margin-top: -50px;
+}
+
+.video
+{
+  position: relative;
+  top: -205px;
+}
+
+#play-btn
+{
+  position: relative;
+  height: 50px;
+  width: 40px;
+  margin: auto;
+  cursor: pointer;
+}
+
+#play-btn:before,
+#play-btn:after
+{
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 0;
+  transition: all 180ms linear;
+  transform: translateZ(0);
+}
+
+#play-btn:before
+{
+  left: 0px;
+}
+
+#play-btn:after
+{
+  right: 0px;
+}
+
+/* --------------- */
+/* Click to pause! */
+/* --------------- */
+
+#play-btn.rectangle-mode:before
+{
+  height: 50px;
+  border-top: 0px solid transparent;
+  border-left: 14px solid #FFF;
+  border-bottom: 0px solid transparent;
+}
+
+#play-btn.rectangle-mode:after
+{
+  height: 50px;
+  border-top: 0px solid transparent;
+  border-left: 14px solid #FFF;
+  border-bottom: 0px solid transparent;
+}
+
+/* -------------- */
+/* Click to play! */
+/* -------------- */
+
+#play-btn.triangle-mode:before
+{
+  height: 30px;
+  border-top: 10px solid transparent;
+  border-left: 14px solid #FFF;
+  border-bottom: 10px solid transparent;
+}
+
+#play-btn.triangle-mode:after
+{
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-left: 22px solid #FFF;
+  border-bottom: 15px solid transparent;
+  transform: translateX(-4px) translateY(10px) translateZ(0);
 }
