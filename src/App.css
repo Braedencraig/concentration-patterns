@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+p {
+  margin: 10px 0;
+  color: white;
+  font-family: 'Gothic A1', sans-serif;
+  font-weight: 900;
+}
+
+.App-header {
+  background: url('../src/vietnam.jpeg');
+  min-height: 100vh;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
