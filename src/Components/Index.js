@@ -40,7 +40,10 @@ class Index extends React.Component {
         <div className='text'>
           <h3>{`${string}///PERPETUAL STREAM///${string}`}</h3>
           <h3>
-            <a href='https://hiddenharmony.bigcartel.com/product/c-r-gillespie-concentration-patterns-2lp-hh01'>
+            <a
+              href='https://hiddenharmony.bigcartel.com/product/c-r-gillespie-concentration-patterns-2lp-hh01'
+              target='_blank'
+            >
               PRE ORDER
             </a>
           </h3>

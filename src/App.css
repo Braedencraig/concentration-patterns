@@ -5,8 +5,8 @@
   src: url('../src/Assets/Fonts/Rubik-Regular.ttf');
   /* IE9 Compat Modes */
   src: local('Rubik-Regular'), local('Rubik-Regular'),
-    url('../src/Assets/Fonts/Rubik-Regular.ttf') format('truetype'),
-    /* Safari, Android, iOS */
+    url('../src/Assets/Fonts/Rubik-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
@@ -16,10 +16,9 @@
   src: url('../src/Assets/Fonts/Rubik-Medium.ttf');
   /* IE9 Compat Modes */
   src: local('Rubik-Medium'), local('Rubik-Medium'),
-    url('../src/Assets/Fonts/Rubik-Medium.ttf') format('truetype'),
-    /* Safari, Android, iOS */
+    url('../src/Assets/Fonts/Rubik-Medium.ttf') format('truetype');
+  /* Safari, Android, iOS */
 }
-
 
 @font-face {
   font-family: 'Rubik-Bold';
@@ -28,8 +27,8 @@
   src: url('../src/Assets/Fonts/Rubik-Bold.ttf');
   /* IE9 Compat Modes */
   src: local('Rubik-Bold'), local('Rubik-Bold'),
-    url('../src/Assets/Fonts/Rubik-Bold.ttf') format('truetype'),
-    /* Safari, Android, iOS */
+    url('../src/Assets/Fonts/Rubik-Bold.ttf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
@@ -39,8 +38,8 @@
   src: url('../src/Assets/Fonts/Panetteria_2019.otf');
   /* IE9 Compat Modes */
   src: local('Panetteria'), local('Panetteria'),
-    url('../src/Assets/Fonts/Panetteria_2019.otf') format('truetype'),
-    /* Safari, Android, iOS */
+    url('../src/Assets/Fonts/Panetteria_2019.otf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
@@ -50,8 +49,8 @@
   src: url('../src/Assets/Fonts/MyriadPro-Regular.otf');
   /* IE9 Compat Modes */
   src: local('MyriadPro-Regular'), local('MyriadPro-Regular'),
-    url('../src/Assets/Fonts/MyriadPro-Regular.otf') format('truetype'),
-    /* Safari, Android, iOS */
+    url('../src/Assets/Fonts/MyriadPro-Regular.otf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
@@ -61,12 +60,9 @@
   src: url('../src/Assets/Fonts/Arial.ttf');
   /* IE9 Compat Modes */
   src: local('Arial'), local('Arial'),
-    url('../src/Assets/Fonts/Arial.ttf') format('truetype'),
-    /* Safari, Android, iOS */
+    url('../src/Assets/Fonts/Arial.ttf') format('truetype');
+  /* Safari, Android, iOS */
 }
-
-
-
 
 .App {
   text-align: center;
@@ -80,7 +76,6 @@
 h1,
 h2 {
   font-family: 'Panetteria', sans-serif;
-
 }
 
 h2 {
@@ -104,7 +99,6 @@ a {
   font-family: 'Arial';
   color: rgb(208, 187, 170);
   transition: 0.4s all;
-
 }
 
 a:hover {
@@ -120,7 +114,7 @@ svg {
 }
 
 svg:hover {
-  fill: black
+  fill: black;
 }
 
 .topSocials {
@@ -135,7 +129,7 @@ p:last-child {
 }
 
 .text p {
-  font-family: "Panetteria", sans-serif;
+  font-family: 'Panetteria', sans-serif;
   font-weight: 900;
   font-size: 30px;
 }
@@ -170,7 +164,7 @@ image {
 
 #play-btn:before,
 #play-btn:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   top: 0;
@@ -186,54 +180,46 @@ image {
   right: 0px;
 }
 
-
-
 #play-btn.rectangle-mode:before {
   height: 50px;
   border-top: 0px solid transparent;
-  border-left: 14px solid #D0BBAA;
+  border-left: 14px solid #d0bbaa;
   border-bottom: 0px solid transparent;
 }
 
 #play-btn.rectangle-mode:after {
   height: 50px;
   border-top: 0px solid transparent;
-  border-left: 14px solid #D0BBAA;
+  border-left: 14px solid #d0bbaa;
   border-bottom: 0px solid transparent;
 }
-
-
 
 #play-btn.triangle-mode:before {
   height: 30px;
   border-top: 10px solid transparent;
-  border-left: 14px solid #D0BBAA;
+  border-left: 14px solid #d0bbaa;
   border-bottom: 10px solid transparent;
 }
 
 #play-btn.triangle-mode:after {
   height: 0px;
   border-top: 15px solid transparent;
-  border-left: 22px solid #D0BBAA;
+  border-left: 22px solid #d0bbaa;
   border-bottom: 15px solid transparent;
   transform: translateX(-4px) translateY(10px) translateZ(0);
 }
 
 @media only screen and (max-width: 1050px) {
   #play-btn {
-    top: 43%
+    top: 43%;
   }
-
 }
 
 @media only screen and (max-width: 550px) {
-
   #play-btn {
     top: -5%;
     bottom: 0;
   }
-
-
 
   h1 {
     font-size: 40px;
@@ -248,7 +234,6 @@ image {
     font-size: 20px;
     letter-spacing: 2px;
   }
-
 }
 
 @media only screen and (max-width: 380px) {
@@ -263,5 +248,4 @@ image {
   h2 {
     font-size: 25px;
   }
-
 }
