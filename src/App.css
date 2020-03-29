@@ -134,6 +134,12 @@ p:last-child {
   margin-bottom: 40px;
 }
 
+.text p {
+  font-family: "Panetteria", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+
 .App-header {
   background: url('../src/vietnam.jpeg');
   min-height: 100vh;
@@ -237,7 +243,8 @@ image {
     font-size: 30px;
   }
 
-  h3 {
+  h3,
+  .text p {
     font-size: 20px;
     letter-spacing: 2px;
   }

@@ -45,7 +45,7 @@ class Index extends React.Component {
             </a>
           </h3>
 
-          <p>May 1st</p>
+          <p>Out May 1st on 2xLP</p>
           <p>Hidden Harmony Recordings</p>
           <p>(HH01)</p>
         </div>
