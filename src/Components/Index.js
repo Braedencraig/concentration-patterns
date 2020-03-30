@@ -28,6 +28,17 @@ class Index extends React.Component {
       <>
         <div className='image'>
           <img src={logo} className='App-logo' alt='logo' />
+          {/* <div className='video' onClick={e => handleClick(e)}>
+            <div
+              id='play-btn'
+              className={
+                this.state.active === false ? 'triangle-mode' : 'rectangle-mode'
+              }
+            ></div>
+          </div> */}
+        </div>
+        <div className='text'>
+          <h3>{`${string}///PERPETUAL STREAM///${string}`}</h3>
           <div className='video' onClick={e => handleClick(e)}>
             <div
               id='play-btn'
@@ -36,9 +47,6 @@ class Index extends React.Component {
               }
             ></div>
           </div>
-        </div>
-        <div className='text'>
-          <h3>{`${string}///PERPETUAL STREAM///${string}`}</h3>
           <h3>
             <a
               href='https://hiddenharmony.bigcartel.com/product/c-r-gillespie-concentration-patterns-2lp-hh01'

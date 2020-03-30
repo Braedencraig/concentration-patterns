@@ -73,6 +73,10 @@
   pointer-events: none;
 }
 
+.topText {
+  margin-top: 40px;
+}
+
 h1,
 h2 {
   font-family: 'Panetteria', sans-serif;
@@ -152,14 +156,14 @@ image {
 }
 
 #play-btn {
-  position: absolute;
+  position: relative;
   height: 50px;
   width: 40px;
   margin: auto;
   cursor: pointer;
-  left: 0;
+  /* left: 0;
   right: -1%;
-  top: 41%;
+  top: 41%; */
 }
 
 #play-btn:before,
